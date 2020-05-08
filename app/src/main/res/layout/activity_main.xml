@@ -6,13 +6,48 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/btn_start_foo"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:text="启动foo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/btn_start_baz"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="启动baz"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_start_foo" />
+
+    <Button
+        android:id="@+id/btn_start_foo_3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="启动foo三次"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_start_baz" />
+
+    <Button
+        android:id="@+id/btn_start_baz_3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="启动baz三次"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_start_foo_3" />
+
+    <Button
+        android:id="@+id/btn_start_foo_baz_3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="启动foo和baz三次"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_start_baz_3" />
 </androidx.constraintlayout.widget.ConstraintLayout>
